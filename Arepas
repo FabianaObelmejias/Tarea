@@ -1,11 +1,14 @@
-#Se solicita al usuario insertar la cantidad de caa ingrediente
-tazas_de_agua = int(input("Ingresar cantidad (en números enteros) de agua: "))
-cucharadas_de_sal = float(input("Ingresar cantidad de cucharadas de sal: "))
-tazas_de harina = int(input("Ingresar cantidad (en números enteros) de harina: "))
+#Se solicita al usuario insertar la cantidad de cada ingrediente
+   tazas_de_agua = int(input("Ingresar cantidad (en números enteros) de agua: "))
+   cucharadas_de_sal = float(input("Ingresar cantidad de cucharadas de sal: "))
+   tazas_de_harina = int(input("Ingresar cantidad (en números enteros) de harina: "))
 
 #Conversión de cucharadas de sal a tazas de sal
-tazas_de_sal = cucharadas_de_sal*1/16
+   tazas_de_sal = cucharadas_de_sal / 16
 
-#Suma de cantidad total de masa
-masa_total = tazas_de_agua + tazas_de_sal + tazas_de harina
-print ("masa_total = ")
+#Impresión de la conversión de las cucharadas de sal en tazas
+   print(f"{cucharadas_de_sal} cucharadas de sal son {tazas_de_sal} tazas")
+
+#Suma y resultado del total de tazas necesarias para las arepas
+   total_tazas = tazas_de_agua + tazas_de_sal + tazas_de_harina
+   print(f"Para hacer arepas, necesitarás {total_tazas} tazas en total de masa")
